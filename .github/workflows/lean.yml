@@ -1,0 +1,37 @@
+name: Lean
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    name: Build and audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build with Lean and Mathlib
+        uses: leanprover/lean-action@v1
+
+      - name: No warnings
+        run: |
+          rm -rf .lake/build
+          lake build Viviani 2>&1 | tee build.log
+          ! grep -E "warning|error" build.log
+
+      - name: No sorry, axiom or native_decide in the sources
+        run: "! grep -nE '\\bsorry\\b|^axiom |native_decide|implemented_by|unsafe ' Viviani.lean Viviani/*.lean"
+
+      - name: Axiom audit of every declaration
+        run: |
+          lake env lean scripts/Audit.lean | tee audit.log
+          grep -q "^audit: [1-9][0-9]* declarations" audit.log
+          ! grep -q error audit.log
+
+      - name: Statements match the recorded ones
+        run: lake env lean scripts/Statements.lean | diff - scripts/statements.expected
+
+      - name: SHA-256 of the sources
+        run: sha256sum Viviani.lean Viviani/*.lean

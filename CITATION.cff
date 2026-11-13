@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you refer to this formalization, please cite it as below."
+title: "Viviani's theorem in Lean 4"
+abstract: >-
+  A Lean 4 and Mathlib formalization of Viviani's theorem: the classical statement for
+  equilateral triangles (distances to the sides sum to the altitude), its converse, the
+  weighted-average formula for every triangle, signed distances on the whole plane, and
+  simplices of every dimension. No sorry, standard axioms only; re-checked by leanchecker
+  and by the independent checker nanoda, with tamper tests.
+type: software
+authors:
+  - alias: redzwn
+  - name: "Claude (Anthropic)"
+repository-code: "https://github.com/redzwn/viviani-lean"
+license: Apache-2.0
+version: 2.0.0
+date-released: 2026-11-13
+keywords:
+  - Lean 4
+  - Mathlib
+  - formal verification
+  - theorem proving
+  - Euclidean geometry
+  - Viviani's theorem

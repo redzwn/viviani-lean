@@ -1,0 +1,114 @@
+@viviani : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V] {A B C P : V},
+  dist A B = dist B C →
+    dist C A = dist B C →
+      P ∈ (convexHull ℝ) {A, B, C} →
+        Metric.infDist P ↑line[ℝ, B, C] + Metric.infDist P ↑line[ℝ, C, A] + Metric.infDist P ↑line[ℝ, A, B] =
+          √3 / 2 * dist B C
+@viviani_segment : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V] {A B C P : V},
+  dist A B = dist B C →
+    dist C A = dist B C →
+      P ∈ (convexHull ℝ) {A, B, C} →
+        Metric.infDist P (segment ℝ B C) + Metric.infDist P (segment ℝ C A) + Metric.infDist P (segment ℝ A B) =
+          √3 / 2 * dist B C
+@viviani_iff : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V] {A B C : V},
+  AffineIndependent ℝ ![A, B, C] →
+    ((∃ c,
+        ∀ P ∈ (convexHull ℝ) {A, B, C},
+          Metric.infDist P ↑line[ℝ, B, C] + Metric.infDist P ↑line[ℝ, C, A] + Metric.infDist P ↑line[ℝ, A, B] = c) ↔
+      dist A B = dist B C ∧ dist C A = dist B C)
+@sum_infDist_eq_of_affineIndependent : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  {A B C : V},
+  AffineIndependent ℝ ![A, B, C] →
+    ∀ {a b c : ℝ},
+      0 ≤ a →
+        0 ≤ b →
+          0 ≤ c →
+            a + b + c = 1 →
+              Metric.infDist (a • A + b • B + c • C) ↑line[ℝ, B, C] +
+                    Metric.infDist (a • A + b • B + c • C) ↑line[ℝ, C, A] +
+                  Metric.infDist (a • A + b • B + c • C) ↑line[ℝ, A, B] =
+                a * Metric.infDist A ↑line[ℝ, B, C] + b * Metric.infDist B ↑line[ℝ, C, A] +
+                  c * Metric.infDist C ↑line[ℝ, A, B]
+@infDist_eq_mul_of_affineIndependent : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  {A B C : V},
+  AffineIndependent ℝ ![A, B, C] →
+    ∀ {a b c : ℝ},
+      0 ≤ a →
+        a + b + c = 1 → Metric.infDist (a • A + b • B + c • C) ↑line[ℝ, B, C] = a * Metric.infDist A ↑line[ℝ, B, C]
+@infDist_segment_eq_infDist_line : ∀ {V : Type u_1} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  {A B C P : V},
+  ↑((EuclideanGeometry.orthogonalProjection line[ℝ, B, C]) A) ∈ segment ℝ B C →
+    P ∈ (convexHull ℝ) {A, B, C} → Metric.infDist P (segment ℝ B C) = Metric.infDist P ↑line[ℝ, B, C]
+@infDist_facetSpan_affineCombination : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  (s : Affine.Simplex ℝ P n) (i : Fin (n + 1)) {w : Fin (n + 1) → ℝ},
+  ∑ j, w j = 1 →
+    Metric.infDist ((Finset.affineCombination ℝ Finset.univ s.points) w) ↑(facetSpan s i) = |w i| * s.height i
+@sum_infDist_facetSpan_affineCombination : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  (s : Affine.Simplex ℝ P n) {w : Fin (n + 1) → ℝ},
+  ∑ j, w j = 1 →
+    (∀ (j : Fin (n + 1)), 0 ≤ w j) →
+      ∑ i, Metric.infDist ((Finset.affineCombination ℝ Finset.univ s.points) w) ↑(facetSpan s i) = ∑ i, w i * s.height i
+@le_sum_infDist_facetSpan : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  {s : Affine.Simplex ℝ P n} {p : P},
+  p ∈ s.closedInterior → ∀ {m : ℝ}, (∀ (i : Fin (n + 1)), m ≤ s.height i) → m ≤ ∑ i, Metric.infDist p ↑(facetSpan s i)
+@sum_infDist_facetSpan_le : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  {s : Affine.Simplex ℝ P n} {p : P},
+  p ∈ s.closedInterior → ∀ {M : ℝ}, (∀ (i : Fin (n + 1)), s.height i ≤ M) → ∑ i, Metric.infDist p ↑(facetSpan s i) ≤ M
+@sum_infDist_facetSpan_const_iff : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  (s : Affine.Simplex ℝ P n),
+  (∃ c, ∀ p ∈ s.closedInterior, ∑ i, Metric.infDist p ↑(facetSpan s i) = c) ↔
+    ∀ (i j : Fin (n + 1)), s.height i = s.height j
+@sum_infDist_facetSpan_const_iff_volume : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  (s : Affine.Simplex ℝ P n),
+  (∃ c, ∀ p ∈ s.closedInterior, ∑ i, Metric.infDist p ↑(facetSpan s i) = c) ↔
+    ∀ (i j : Fin (n + 1)), (s.faceOpposite i).volume = (s.faceOpposite j).volume
+@sum_signedInfDist_div_height : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  (s : Affine.Simplex ℝ P n) {p : P},
+  p ∈ affineSpan ℝ (Set.range s.points) → ∑ i, (s.signedInfDist i) p / s.height i = 1
+@sum_signedInfDist_eq_of_height_eq : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  {s : Affine.Simplex ℝ P n} {h : ℝ},
+  (∀ (i : Fin (n + 1)), s.height i = h) →
+    ∀ {p : P}, p ∈ affineSpan ℝ (Set.range s.points) → ∑ i, (s.signedInfDist i) p = h
+@sum_infDist_facetSpan_mul_volume : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n]
+  {s : Affine.Simplex ℝ P n} {p : P},
+  p ∈ s.closedInterior → ∑ i, Metric.infDist p ↑(facetSpan s i) * (s.faceOpposite i).volume = ↑n * s.volume
+@equilateral_iff_height_eq : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] (t : Affine.Triangle ℝ P),
+  Affine.Simplex.Equilateral t ↔ ∀ (i j : Fin (2 + 1)), Affine.Simplex.height t i = Affine.Simplex.height t j
+@sum_infDist_const_iff_equilateral : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V]
+  [inst_1 : InnerProductSpace ℝ V] [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] (t : Affine.Triangle ℝ P),
+  (∃ c, ∀ p ∈ Affine.Simplex.closedInterior t, ∑ i, Metric.infDist p ↑(facetSpan t i) = c) ↔
+    Affine.Simplex.Equilateral t
+@height_of_dist_eq : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [inst_4 : NeZero n] {s : Affine.Simplex ℝ P n}
+  {r : ℝ},
+  (∀ (i j : Fin (n + 1)), i ≠ j → dist (s.points i) (s.points j) = r) →
+    ∀ (i : Fin (n + 1)), s.height i = √((↑n + 1) / (2 * ↑n)) * r
+@viviani_simplex : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {n : ℕ} [NeZero n] {s : Affine.Simplex ℝ P n} {r : ℝ},
+  (∀ (i j : Fin (n + 1)), i ≠ j → dist (s.points i) (s.points j) = r) →
+    ∀ {p : P}, p ∈ s.closedInterior → ∑ i, Metric.infDist p ↑(facetSpan s i) = √((↑n + 1) / (2 * ↑n)) * r
+@viviani_tetrahedron : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] {s : Affine.Simplex ℝ P 3} {r : ℝ},
+  (∀ (i j : Fin (3 + 1)), i ≠ j → dist (s.points i) (s.points j) = r) →
+    ∀ {p : P}, p ∈ s.closedInterior → ∑ i, Metric.infDist p ↑(facetSpan s i) = √(2 / 3) * r
+@viviani_disphenoid : ∀ {V : Type u_1} {P : Type u_2} [inst : NormedAddCommGroup V] [inst_1 : InnerProductSpace ℝ V]
+  [inst_2 : MetricSpace P] [inst_3 : NormedAddTorsor V P] (s : Affine.Simplex ℝ P 3),
+  dist (s.points 0) (s.points 1) = dist (s.points 2) (s.points 3) →
+    dist (s.points 0) (s.points 2) = dist (s.points 1) (s.points 3) →
+      dist (s.points 0) (s.points 3) = dist (s.points 1) (s.points 2) →
+        ∀ {p : P}, p ∈ s.closedInterior → ∑ i, Metric.infDist p ↑(facetSpan s i) = s.height 0
+@Examples.sum_eq_sqrt_three : ∀ {P : EuclideanSpace ℝ (Fin 2)},
+  P ∈ (convexHull ℝ) {Examples.A₀, Examples.B₀, Examples.C₀} →
+    Metric.infDist P (segment ℝ Examples.B₀ Examples.C₀) + Metric.infDist P (segment ℝ Examples.C₀ Examples.A₀) +
+        Metric.infDist P (segment ℝ Examples.A₀ Examples.B₀) =
+      √3

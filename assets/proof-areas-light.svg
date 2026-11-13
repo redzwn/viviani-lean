@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 760 300" width="760" height="300" role="img" aria-label="Three panels: join P to the corners; the three small triangles have areas one half times side times distance; together they make the whole triangle.">
+<line x1="120.30" y1="245.44" x2="135.00" y2="118.13" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="120.30" y1="245.44" x2="30.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="120.30" y1="245.44" x2="240.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<path d="M30.00,300.00 L240.00,300.00 L135.00,118.13 Z" fill="none" stroke="#1a2233" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="120.30" cy="245.44" r="4.5" fill="#1a2233"/>
+<text paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="112.30" y="237.58">P</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="135.00" y="106.13">A</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="20.00" y="320.00">B</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="250.00" y="320.00">C</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="15" fill="#5b6577" text-anchor="middle" x="135.00" y="352.00">1</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="16" fill="#1a2233" text-anchor="middle" x="135.00" y="378.00">Join P to the corners.</text>
+<polygon points="370.30,245.44 280.00,300.00 490.00,300.00" fill="rgba(29,79,156,0.15)"/>
+<polygon points="370.30,245.44 490.00,300.00 385.00,118.13" fill="rgba(203,58,36,0.14)"/>
+<polygon points="370.30,245.44 385.00,118.13 280.00,300.00" fill="rgba(225,166,20,0.22)"/>
+<line x1="370.30" y1="245.44" x2="385.00" y2="118.13" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="370.30" y1="245.44" x2="280.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="370.30" y1="245.44" x2="490.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="370.30" y1="245.44" x2="370.30" y2="300.00" stroke="#1d4f9c" stroke-width="4"/>
+<path d="M377.30,300.00 L377.30,293.00 L370.30,293.00" fill="none" stroke="#1d4f9c" stroke-width="1.2"/>
+<line x1="370.30" y1="245.44" x2="436.45" y2="207.25" stroke="#cb3a24" stroke-width="4"/>
+<path d="M439.95,213.31 L433.89,216.81 L430.39,210.75" fill="none" stroke="#cb3a24" stroke-width="1.2"/>
+<line x1="370.30" y1="245.44" x2="326.20" y2="219.98" stroke="#e1a614" stroke-width="4"/>
+<path d="M329.70,213.92 L335.76,217.42 L332.26,223.48" fill="none" stroke="#e1a614" stroke-width="1.2"/>
+<path d="M280.00,300.00 L490.00,300.00 L385.00,118.13 Z" fill="none" stroke="#1a2233" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="370.30" cy="245.44" r="4.5" fill="#1a2233"/>
+<text paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="362.30" y="237.58">P</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="385.00" y="106.13">A</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="270.00" y="320.00">B</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="500.00" y="320.00">C</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="15" fill="#5b6577" text-anchor="middle" x="385.00" y="352.00">2</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="16" fill="#1a2233" text-anchor="middle" x="385.00" y="378.00">Each piece has area ½·s·d.</text>
+<polygon points="620.30,245.44 530.00,300.00 740.00,300.00" fill="rgba(29,79,156,0.15)"/>
+<polygon points="620.30,245.44 740.00,300.00 635.00,118.13" fill="rgba(203,58,36,0.14)"/>
+<polygon points="620.30,245.44 635.00,118.13 530.00,300.00" fill="rgba(225,166,20,0.22)"/>
+<line x1="635.00" y1="118.13" x2="635.00" y2="300" stroke="#1a2233" stroke-width="1.4"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="start" x="643.00" y="286.00">h</text>
+<line x1="620.30" y1="245.44" x2="635.00" y2="118.13" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="620.30" y1="245.44" x2="530.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="620.30" y1="245.44" x2="740.00" y2="300.00" stroke="#1a2233" stroke-width="1.1"/>
+<path d="M530.00,300.00 L740.00,300.00 L635.00,118.13 Z" fill="none" stroke="#1a2233" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="620.30" cy="245.44" r="4.5" fill="#1a2233"/>
+<text paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="612.30" y="237.58">P</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="635.00" y="106.13">A</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="520.00" y="320.00">B</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="750.00" y="320.00">C</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="15" fill="#5b6577" text-anchor="middle" x="635.00" y="352.00">3</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="16" fill="#1a2233" text-anchor="middle" x="635.00" y="378.00">Together they make ½·s·h.</text>
+</svg>

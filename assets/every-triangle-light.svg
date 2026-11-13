@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 330" width="760" height="330" role="img" aria-label="Left: in a scalene triangle the three distances from P stack to a total that lies between the shortest and the tallest height; faint parallel lines join points with equal totals. Right: in an equilateral triangle the three heights coincide and the stack always reaches exactly that height.">
+<path d="M30.0,280.0 L300.0,280.0 L110.0,52.0 Z" fill="rgba(26,34,51,0.04)"/>
+<line x1="53.0" y1="214.4" x2="63.7" y2="280.0" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="76.0" y1="148.9" x2="97.5" y2="280.0" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="99.0" y1="83.3" x2="131.2" y2="280.0" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="165.0" y1="280.0" x2="132.0" y2="78.4" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="198.8" y1="280.0" x2="174.0" y2="128.8" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="232.5" y1="280.0" x2="216.0" y2="179.2" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="266.3" y1="280.0" x2="258.0" y2="229.6" stroke="#9aa2af" stroke-width="0.8" opacity="0.6"/>
+<line x1="110.0" y1="52.0" x2="110.0" y2="280.0" stroke="#1d4f9c" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="30.0" y1="280.0" x2="189.3" y2="147.2" stroke="#cb3a24" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="300.0" y1="280.0" x2="59.6" y2="195.6" stroke="#e1a614" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="129.6" y1="211.6" x2="129.6" y2="280.0" stroke="#1d4f9c" stroke-width="4.5"/>
+<path d="M136.60,280.00 L136.60,273.00 L129.60,273.00" fill="none" stroke="#1d4f9c" stroke-width="1.2"/>
+<line x1="129.6" y1="211.6" x2="196.5" y2="155.8" stroke="#cb3a24" stroke-width="4.5"/>
+<path d="M201.01,161.21 L195.63,165.69 L191.15,160.31" fill="none" stroke="#cb3a24" stroke-width="1.2"/>
+<line x1="129.6" y1="211.6" x2="62.3" y2="188.0" stroke="#e1a614" stroke-width="4.5"/>
+<path d="M64.60,181.38 L71.21,183.69 L68.89,190.30" fill="none" stroke="#e1a614" stroke-width="1.2"/>
+<path d="M30.0,280.0 L300.0,280.0 L110.0,52.0 Z" fill="none" stroke="#1a2233" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="129.6" cy="211.6" r="5" fill="#1a2233"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="110.0" y="42.0">A</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="18.0" y="296.0">B</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="312.0" y="296.0">C</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="143.5" y="224.6">P</text>
+<rect x="320" y="25.2" width="30" height="47.4" fill="#9aa2af" opacity="0.28"/>
+<rect x="328" y="211.6" width="14" height="68.4" fill="#1d4f9c"/>
+<rect x="328" y="124.5" width="14" height="87.1" fill="#cb3a24"/>
+<rect x="328" y="53.1" width="14" height="71.3" fill="#e1a614"/>
+<line x1="318" x2="352" y1="280" y2="280" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="316" x2="354" y1="53.1" y2="53.1" stroke="#1a2233" stroke-width="2"/>
+<line x1="344" x2="354" y1="25.2" y2="25.2" stroke="#e1a614" stroke-width="2"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="14" fill="#8a6100" text-anchor="start" x="359.0" y="30.2">h<tspan font-size="10" dy="3">C</tspan></text>
+<line x1="344" x2="354" y1="52.0" y2="52.0" stroke="#1d4f9c" stroke-width="2"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="14" fill="#1d4f9c" text-anchor="start" x="359.0" y="57.0">h<tspan font-size="10" dy="3">A</tspan></text>
+<line x1="344" x2="354" y1="72.6" y2="72.6" stroke="#cb3a24" stroke-width="2"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="14" fill="#cb3a24" text-anchor="start" x="359.0" y="77.6">h<tspan font-size="10" dy="3">B</tspan></text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="14.5" fill="#5b6577" text-anchor="middle" x="185.0" y="318.0">Any triangle: the total is an average of the three heights.</text>
+<path d="M420.0,280.0 L670.0,280.0 L545.0,63.5 Z" fill="rgba(26,34,51,0.04)"/>
+<line x1="545.0" y1="63.5" x2="545.0" y2="280.0" stroke="#1d4f9c" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="420.0" y1="280.0" x2="607.5" y2="171.7" stroke="#cb3a24" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="670.0" y1="280.0" x2="482.5" y2="171.7" stroke="#e1a614" stroke-width="1.1" stroke-dasharray="2 4"/>
+<line x1="527.5" y1="215.0" x2="527.5" y2="280.0" stroke="#1d4f9c" stroke-width="4.5"/>
+<path d="M534.50,280.00 L534.50,273.00 L527.50,273.00" fill="none" stroke="#1d4f9c" stroke-width="1.2"/>
+<line x1="527.5" y1="215.0" x2="606.2" y2="169.6" stroke="#cb3a24" stroke-width="4.5"/>
+<path d="M609.75,175.64 L603.69,179.14 L600.19,173.08" fill="none" stroke="#cb3a24" stroke-width="1.2"/>
+<line x1="527.5" y1="215.0" x2="475.0" y2="184.7" stroke="#e1a614" stroke-width="4.5"/>
+<path d="M478.50,178.68 L484.56,182.18 L481.06,188.24" fill="none" stroke="#e1a614" stroke-width="1.2"/>
+<path d="M420.0,280.0 L670.0,280.0 L545.0,63.5 Z" fill="none" stroke="#1a2233" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="527.5" cy="215.0" r="5" fill="#1a2233"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="545.0" y="53.5">A</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="408.0" y="296.0">B</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="682.0" y="296.0">C</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="17" fill="#1a2233" text-anchor="middle" x="527.5" y="204.0">P</text>
+<rect x="690" y="63.5" width="30" height="1.5" fill="#9aa2af" opacity="0.28"/>
+<rect x="698" y="215.0" width="14" height="65.0" fill="#1d4f9c"/>
+<rect x="698" y="124.1" width="14" height="90.9" fill="#cb3a24"/>
+<rect x="698" y="63.5" width="14" height="60.6" fill="#e1a614"/>
+<line x1="688" x2="722" y1="280" y2="280" stroke="#1a2233" stroke-width="1.1"/>
+<line x1="686" x2="724" y1="63.5" y2="63.5" stroke="#1a2233" stroke-width="2"/>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="italic" font-size="14" fill="#5b6577" text-anchor="start" x="729.0" y="68.5">h</text>
+<text font-family="Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif" font-style="normal" font-size="14.5" fill="#5b6577" text-anchor="middle" x="575.0" y="318.0">Equal heights: the total cannot move.</text>
+</svg>
